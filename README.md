@@ -17,10 +17,13 @@ Key features:
 If you use this code in your research, please cite the original LFADS paper:
 
 ```
-@article{pandarinath2018lfads,
-  title={LFADS: Latent factor analysis via dynamical systems},
-  author={Pandarinath, Chethan and O'Connor, Daniel H and Paninski, Liam and Sahani, Maneesh},
-  journal={arXiv preprint arXiv:1708.06343},
+@article{pandarinath2018inferring,
+  title={Inferring single-trial neural population dynamics using sequential auto-encoders},
+  author={Pandarinath et al.},
+  journal={Nature methods},
+  volume={15},
+  number={10},
+  pages={805--815},
   year={2018}
 }
 ```
