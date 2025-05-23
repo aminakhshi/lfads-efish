@@ -94,21 +94,21 @@ class ConstrainedGRUCell(nn.Module):
         
         # Update gate
         z = torch.sigmoid(
-            F.linear(x, self.weight_xz.t()) +
+            F.linear(x, self.weight_xz) +
             F.linear(h, weight_hz.t()) +
             self.bias_z
         )
         
         # Reset gate
         r = torch.sigmoid(
-            F.linear(x, self.weight_xr.t()) +
+            F.linear(x, self.weight_xr) +
             F.linear(h, weight_hr.t()) +
             self.bias_r
         )
         
         # Candidate hidden state
         h_tilde = torch.tanh(
-            F.linear(x, self.weight_xh.t()) +
+            F.linear(x, self.weight_xh) +
             F.linear(r * h, weight_hh.t()) +
             self.bias_h
         )

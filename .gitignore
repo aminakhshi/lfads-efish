@@ -1,7 +1,7 @@
 main_model.py
 lfads_run.py
 integration_example.py
-
+checkpoints/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
